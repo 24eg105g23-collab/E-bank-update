@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production builds
+backend/target/
+client/dist/
+client/build/
+
+# Temp & Local Files
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+
+# Express uploads & persistent local DB
+backend/uploads/
+server/uploads/*
+!server/uploads/.gitkeep
+server/db_data.json
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.suo
+*.user

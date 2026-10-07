@@ -1,0 +1,28 @@
+{
+  "name": "ebank-update-fullstack",
+  "version": "1.0.0",
+  "description": "Digital Banking KYC & Information Update System",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "banking",
+    "kyc",
+    "express",
+    "react",
+    "fullstack",
+    "otp",
+    "fintech"
+  ],
+  "author": "Antigravity Dev",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
